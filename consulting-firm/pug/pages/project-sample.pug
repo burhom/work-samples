@@ -1,0 +1,34 @@
+extends ../layout
+
+block variables
+  -var active = 'projects'
+  -var title = 'Project Sample'
+  -var bodyClass = 'single'
+
+block body
+  section.single-project
+    .slider
+      a(href='#').prev
+        span
+        i.fa.fa-chevron-left
+      a(href='#').next
+        span
+        i.fa.fa-chevron-right
+      .slide: img(src='/assets/img/gallery-1.jpg')
+      .slide: img(src='/assets/img/gallery-2.jpg')
+      .slide: img(src='/assets/img/gallery-3.jpg')
+      .slide: img(src='/assets/img/gallery-4.jpg')
+    .container
+      .row
+        .col-md-9.col-md-offset-3
+          header
+            h1.project-title 1234 5th St. NE
+          h3 Description
+          p Suspendisse a facilisis tortor, a fermentum dolor. Nullam quis sollicitudin sapien. Nulla tempor lacus suscipit ante mollis, sit amet imperdiet ipsum tempor. Integer tortor leo, lacinia ac mattis eu, volutpat vitae mauris. Cras vel libero consectetur, faucibus felis sed, rutrum lacus. Integer sed nisi vitae magna facilisis ultrices.
+          p Quisque malesuada turpis ante, ut eleifend nunc iaculis sed. Nullam vehicula sollicitudin libero vitae auctor. Nullam sollicitudin ullamcorper magna. aliquam massa sodales vel.
+          a(href='#', target='_blank').map-link
+            span View
+            .diamond-wrapper
+              .diamond
+              i.fa.fa-map-marker
+            span Map

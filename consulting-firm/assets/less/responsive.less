@@ -1,0 +1,194 @@
+@media (max-width: 480px) {
+
+  //mobile-specific
+  #home-nav {
+    width: auto;
+    a {
+      margin: 10px 80px;
+    }
+  }
+
+}
+
+@media(max-width: 767px) {
+
+  .slide {
+
+    img {
+      display: block !important;
+    }
+
+    .backstretch {
+      display: none;
+    }
+  }
+
+}
+
+
+@media(min-width: 768px) {
+
+  //tablet
+  hr {
+    &.right {
+      margin: 20px 0 10px auto;
+    }
+
+    &.left {
+      margin: 20px auto 10px 0;
+    }
+  }
+
+  #home-nav {
+    padding-left: 10px;
+    width: auto;
+  }
+
+  .logo {
+    float: left;
+  }
+
+  #main-nav {
+    float: right;
+    background: none;
+    margin: 15px 0;
+
+    ul {
+      li {
+        a {
+          font-size: 16px;
+          color: @charcoal;
+
+          &:hover {
+            color: @lightBlue;
+            background: none;
+          }
+        }
+
+        &.active {
+          a {
+            color: @lightBlue;
+            background: none;
+          }
+        }
+      }
+    }
+  }
+
+  #footer {
+    padding-top: 0;
+    background: none;
+
+    .container {
+      background: none;
+    }
+
+    a {
+      color: @white;
+
+      &:hover {
+        color: @white;
+      }
+    }
+
+    span {
+      color: lighten(@blue, 5%);
+    }
+
+    .copy {
+      color: lighten(@blue, 40%);
+    }
+  }
+
+  .home #footer {
+    position: absolute;
+    bottom: 20px;
+
+    .copy {
+      margin-bottom: 0;
+    }
+  }
+
+  .single #footer,
+  .page #footer {
+    background: none;
+
+    .container {
+      background: none;
+    }
+
+    a {
+      color: @lightBlue;
+
+      &:hover {
+        color: @blue;
+      }
+    }
+
+    span {
+      color: lighten(@charcoal, 75%);
+    }
+
+    .copy {
+      color: lighten(@charcoal, 45%);
+    }
+  }
+
+  section#home {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -300px;
+  }
+
+  // .project-thumb {
+  //   .overlay {
+  //     bottom: -100%;
+  //   }
+
+  //   a {
+  //     &:hover {
+  //       .overlay {
+  //         bottom: 0;
+  //       }
+  //     }
+  //   }
+  // }
+
+  .slider {
+    .slide {
+      height: 450px;
+    }
+  }
+
+}
+
+
+@media(min-width: 992px) {
+  
+  //desktop
+  #home-nav {
+    a {
+      width: 200px;
+
+      .diamond {
+        width: 190px;
+        height: 190px;
+      }
+    }
+  }
+
+  .slider {
+    .slide {
+      height: 500px;
+    }
+  }
+
+}
+
+
+@media(min-width: 1200px) {
+
+  //lg-desktop
+
+}

@@ -1,0 +1,24 @@
+extends ../layout
+
+block variables
+  -var active = 'home'
+  -var title = 'Home'
+  -var bodyClass = 'home'
+
+block body
+  section#home
+    a(href='#').home-logo
+      img(src='/assets/img/logo-home.png', alt='Consulting Firm')
+    #home-nav
+      a(href='/projects.html')
+        .diamond
+        h2 Projects
+      a(href='/services.html')
+        .diamond
+        h2 Services
+      a(href='/about.html')
+        .diamond
+        h2 About
+      a(href='/contact.html')
+        .diamond
+        h2 Contact
