@@ -1,0 +1,47 @@
+header#header
+  nav(role='navigation').navbar
+    .container
+      //- Logo
+      #logo.navbar-left
+        a(href='/')
+          .square-wrapper
+            .square(style='background:#915293;')
+            .square(style='background:#5c357a;')
+            .square(style='background:#8e5a9a;')
+            .square(style='background:#b27cb6;')
+            .square(style='background:#724c8f;')
+            .square(style='background:#a166a3;')
+            .square(style='background:#79478a;')
+            .square(style='background:#8c5898;')
+            .square(style='background:#9068a7;')
+            .square(style='background:#795092;')
+            .square(style='background:#b687bc;')
+            .square(style='background:#7c4086;')
+            .square(style='background:#835395;')
+            .square(style='background:#9762a1;')
+            .square(style='background:#502d6c;')
+            .square(style='background:#9763a2;')
+          img(src='/assets/img/logo.png', alt='Design Company')
+      
+      //- Mobile Menu Icon
+      button(type='button', data-toggle='collapse', data-target='#main-nav').navbar-toggle
+          span.sr-only navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+      
+      //- Navigation
+      #main-nav.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li: a(href='about') About
+          li: a(href='work') Work
+          li: a(href='news') News
+          li: a(href='contact') Contact
+        //- Social
+        ul#social
+          li: a(href='#', target='_blank')
+            i.fa.fa-facebook
+          li: a(href='#', target='_blank')
+            i.fa.fa-twitter
+          li: a(href='#', target='_blank')
+            i.fa.fa-linkedin

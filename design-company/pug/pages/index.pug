@@ -1,0 +1,64 @@
+extends ../layout
+
+block variables
+  -var active = 'home'
+  -var title = 'Welcome'
+
+block body
+  article#project
+  article#post
+  section#welcome.section
+    .slider
+      .slide
+        .tagline
+          .container
+            .col-md-8.col-md-offset-2
+              h2 Lorem ipsum dolor sit amet
+              a(href='#').btn
+                .corner.nw
+                .corner.ne
+                .corner.sw
+                .corner.se
+                .line.line-t
+                .line.line-r
+                .line.line-b
+                .line.line-l
+                span Learn More
+        img(src='/assets/img/gallery-1.jpg')#portrait-image
+      .slide
+        .tagline
+          .container
+            .col-md-8.col-md-offset-2
+              h2 Donec viverra id nunc vel vestibulum
+              a(href='#').btn
+                .corner.nw
+                .corner.ne
+                .corner.sw
+                .corner.se
+                .line.line-t
+                .line.line-r
+                .line.line-b
+                .line.line-l
+                span Learn More
+        img(src='/assets/img/gallery-1.jpg')
+      .slide
+        .tagline
+          .container
+            .col-md-8.col-md-offset-2
+              h2 Suspendisse lobortis purus id massa interdum
+              a(href='#').btn
+                .corner.nw
+                .corner.ne
+                .corner.sw
+                .corner.se
+                .line.line-t
+                .line.line-r
+                .line.line-b
+                .line.line-l
+                span Learn More
+        img(src='/assets/img/gallery-1.jpg')
+  #wrapper
+    include ../partials/_about
+    include ../partials/_work
+    include ../partials/_news
+    include ../partials/_contact

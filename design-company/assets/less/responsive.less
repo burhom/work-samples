@@ -1,0 +1,296 @@
+@media (max-width: 767px) {
+
+  //tablet and below
+  #welcome {
+    padding-top: 0;
+  }
+
+  #project .project-links a {
+    margin: 30px 0 !important;
+    
+    span {
+      line-height: 30px;
+    }
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  //mobile-specific
+
+}
+
+@media (min-width: 481px) {
+
+  #posts {
+    padding-bottom: 0;
+
+    > span {
+      top: 0;
+      bottom: auto;
+      width: 40px;
+      height: 100%;
+    }
+  }
+
+
+}
+
+
+@media(min-width: 768px) {
+
+  //tablet
+
+  
+  /*-----Base-----*/
+  
+  body {
+    font-size: 18px;
+    line-height: 26px;
+
+    &.project-active {
+      #project {
+        top: 87px;
+      }
+    }
+  }
+
+  /*-----Typography-----*/
+
+  // Headers
+
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  h3 {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .tagline {
+    h2 {
+      font-size: 48px;
+      letter-spacing: 4px;
+      margin: 0;
+      padding-bottom: 40px;
+    }
+
+    .btn {
+      font-size: 16px;
+      padding: 10px 30px;
+    }
+  }
+
+  .slick-dots {
+    bottom: 30px;
+  }
+
+  
+  #main-nav {
+    background: none;
+    float: right;
+    margin: 30px 0;
+
+    .navbar-nav {
+      > li {
+        > a {
+          margin: 0 15px;
+          padding: 2px 0;
+          color: @gray;
+          font-size: 12px;
+
+          &:hover {
+            color: @gray;
+            border-bottom: 1px dotted @purple;
+            background: none;
+          }
+      }
+
+      &.active {
+          a {
+            color: @purple;
+            border-bottom: 1px dotted @purple;
+
+            &:hover {
+              background: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ul#social {
+    float: right;
+    margin: -3px 0 0 0;
+
+    li {
+      a {
+        border: 2px solid @purple;
+        color: @purple;
+
+        &:hover {
+          color: @white;
+          background: @purple;
+        }
+      }
+    }
+  }
+
+
+  #footer {
+    p {
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 1px;
+    }
+  }
+
+
+  /*----- Sections ----- */
+
+  .section {
+    padding: 85px 0;
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 30px;
+
+    li {
+      &.slick-active {
+        border-color: @white;
+      }
+
+      button {
+        background: @white;
+      }
+    }
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input,
+  .form-control {
+    font-size: 16px;
+  }
+
+  #posts {
+    > span {
+      width: 200px;
+    }
+  }
+
+
+  #project {
+
+    .fade-scale {
+      padding: 0 30px 100px;
+    }
+
+    .close {
+      position: fixed;
+    }
+
+    header {
+      h3 {
+        font-size: 22px;
+      }
+    }
+
+    .project-links {
+      margin-bottom: auto;
+      padding: auto;
+      a {
+        border-bottom: 2px solid;
+        position: fixed;
+        top: 50%;
+        display: inline-block;
+        white-space: nowrap;
+
+        strong {
+          display: inline;
+        }
+
+        span {
+          border-bottom: none;
+          padding-bottom: auto;
+        }
+      }
+    }
+
+    .prev-project {
+      left: 30px;
+      -webkit-transform: rotate(-90deg);
+         -moz-transform: rotate(-90deg);
+           -o-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+      -webkit-transform-origin: 0 0;
+         -moz-transform-origin: 0 0;
+           -o-transform-origin: 0 0;
+              transform-origin: 0 0;
+       /* IE9+ */
+       -ms-transform: none;
+       -ms-transform-origin: none;
+       /* IE8+ */
+       -ms-writing-mode: tb-rl;
+       /* IE7 and below */
+       *writing-mode: tb-rl;
+    }
+
+    .next-project {
+      right: 30px;
+      -webkit-transform: rotate(90deg);
+         -moz-transform: rotate(90deg);
+           -o-transform: rotate(90deg);
+              transform: rotate(90deg);
+      -webkit-transform-origin: 100% 0;
+         -moz-transform-origin: 100% 0;
+           -o-transform-origin: 100% 0;
+              transform-origin: 100% 0;
+       /* IE9+ */
+       -ms-transform: none;
+       -ms-transform-origin: none;
+       /* IE8+ */
+       -ms-writing-mode: tb-rl;
+       /* IE7 and below */
+       *writing-mode: tb-rl;
+    }
+  }
+
+  #post {
+    top: 85px;
+  }
+
+}
+
+
+@media(min-width: 992px) {
+  
+  //desktop
+
+}
+
+
+@media(min-width: 1200px) {
+
+  //lg-desktop
+
+}

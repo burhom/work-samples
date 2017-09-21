@@ -1,0 +1,75 @@
+extends ../layout
+
+block variables
+  -var active = 'article'
+  -var title = 'This is the Title of the Article'
+
+block body
+  article#project
+  article#post
+    a(href='#').close
+      img(src='/assets/img/icn.close-inverted.png', alt='close')
+    .container
+      .col-md-8.col-md-offset-2
+        header
+          h3 03/09/14
+          h1 News Post Title Goes Here
+        .post-content
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut ligula et est semper bibendum quis ac odio. Fusce ultricies ante lectus, non viverra lacus rutrum vel. Sed dictum nulla non nisi elementum, condimentum egestas nisi euismod. Vivamus id ligula vel neque accumsan consequat quis vitae nibh. Nulla facilisi. Cras sit amet ipsum odio. Nullam faucibus mi sem, ultricies feugiat turpis molestie quis. Maecenas eros augue, aliquam sed luctus posuere, aliquet vitae justo. Praesent fermentum ligula ac vestibulum consectetur. Maecenas molestie tellus magna, eu tincidunt elit mattis eu.
+          p Fusce sed purus ut nulla suscipit aliquet. Nullam eu turpis metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque ut erat blandit, congue dui sit amet, auctor enim. In rutrum dui id ligula accumsan rhoncus. Sed eu sem nibh. Mauris blandit diam quis euismod ultricies.
+
+  section#welcome.section
+    .slider
+      .slide
+        .tagline
+          .container
+            .col-md-8.col-md-offset-2
+              h2 Lorem ipsum dolor sit amet
+              a(href='#').btn
+                .corner.nw
+                .corner.ne
+                .corner.sw
+                .corner.se
+                .line.line-t
+                .line.line-r
+                .line.line-b
+                .line.line-l
+                span Learn More
+        img(src='/assets/img/gallery-1.jpg')#portrait-image
+      .slide
+        .tagline
+          .container
+            .col-md-8.col-md-offset-2
+              h2 Donec viverra id nunc vel vestibulum
+              a(href='#').btn
+                .corner.nw
+                .corner.ne
+                .corner.sw
+                .corner.se
+                .line.line-t
+                .line.line-r
+                .line.line-b
+                .line.line-l
+                span Learn More
+        img(src='/assets/img/gallery-1.jpg')
+      .slide
+        .tagline
+          .container
+            .col-md-8.col-md-offset-2
+              h2 Suspendisse lobortis purus id massa interdum
+              a(href='#').btn
+                .corner.nw
+                .corner.ne
+                .corner.sw
+                .corner.se
+                .line.line-t
+                .line.line-r
+                .line.line-b
+                .line.line-l
+                span Learn More
+        img(src='/assets/img/gallery-1.jpg')
+  #wrapper
+    include ../partials/_about
+    include ../partials/_work
+    include ../partials/_news
+    include ../partials/_contact

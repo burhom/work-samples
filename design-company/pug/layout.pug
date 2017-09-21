@@ -1,0 +1,82 @@
+block variables
+
+doctype html
+//if lt IE 7
+  <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+//if IE 7
+  <html class="no-js lt-ie9 lt-ie8" lang="en">
+//if IE 8
+  <html class="no-js lt-ie9" lang="en">
+//[if gt IE 8]><!
+html(class='no-js', lang='en')
+  //<![endif]
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+
+    title #{title} | Design Company
+
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+
+    meta(property='og:url', content='')
+    meta(property='og:title', content='')
+    meta(property='og:image', content='')
+    meta(property='og:image:type', content='image/png')
+    meta(property='og:image:width', content='400')
+    meta(property='og:image:height', content='400')
+
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+
+    link(href='/assets/css/vendor/bootstrap.min.css', rel='stylesheet')
+    link(href='/assets/css/app.css', rel='stylesheet')
+
+    script(src='/assets/js/vendor/modernizr-2.7.0.min.js')
+
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700', rel='stylesheet', type='text/css')
+    link(href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css', rel='stylesheet')
+  
+  - if (active === 'project')
+    - var bodyClass = 'project-active fixed'
+  - else if (active === 'article')
+    - var bodyClass = 'article-active fixed'
+  body(class=bodyClass)
+    include partials/nav   
+
+    block body
+
+    footer#footer
+      .container
+        .row
+          .col-xs-10.col-xs-offset-1
+            p Design Company &copy; 2014. All Rights Reserved.
+            p.sub Suspendisse lobortis purus id massa interdum, VA
+
+    #loader(data-opening='M 0,0 0,60 80,60 80,0 Z M 0,0 0,60 80,60 80,0 Z').pageload-overlay
+      h3 Loading...
+      svg(xmlns='http://www.w3.org/2000/svg', width='100%', height='100%', viewbox='0 0 80 60', preserveaspectratio='none')
+        path(d='M 40,30 40,30 40,30 40,30 Z M 40,30 40,30 40,30 40,30 Z')
+
+
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.11.1.min.js"><\\/script>')
+    //[if gt IE 8]><!
+    script(src='/assets/js/vendor/snap.svg-min.js')
+    script(src='/assets/js/vendor/svgLoader.js')
+    //<![endif]
+
+    script(src='/assets/js/plugins.min.js')
+    script(src='/assets/js/main.js')
+
+    block scripts
+
+    script.
+      var _gaq=[['_setAccount','UA-XXXXX-XX'],['_trackPageview'],['_trackPageLoadTime']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));

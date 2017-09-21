@@ -1,0 +1,34 @@
+section#contact.section
+        .container
+          h2 Get in touch
+          .content
+            p.text-center Fill out the form below to get in touch. Or if you'd prefer, you can contact me directly.
+            .row
+              .col-sm-6.text-center
+                h3 Email:
+                a(href='mailto:design@company.com', target='_blank').hero design@company.com
+              .col-sm-6.text-center
+                h3 Phone:
+                a(href='tel:123-456-7890', target='_blank').hero 123.456.7890
+            form(role='form')#contact-form
+              .row
+                .col-md-6
+                  label(for='name') Your Name
+                  input(type='text', name='name', value='')#name.form-control
+                .col-md-6
+                  label(for='email') Your Email Address
+                  input(type='text', name='email', value='')#email.form-control
+                .col-md-12
+                  label(for='message') Message
+                  textarea(name='message', rows='3')#message.form-control
+                  .text-center
+                    button(type='submit').btn.btn-small
+                      .corner.nw
+                      .corner.ne
+                      .corner.sw
+                      .corner.se
+                      .line.line-t
+                      .line.line-r
+                      .line.line-b
+                      .line.line-l
+                      span Submit

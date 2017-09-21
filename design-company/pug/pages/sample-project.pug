@@ -1,0 +1,82 @@
+extends ../layout
+
+block variables
+  -var active = 'project'
+  -var title = 'Project Title Goes Here'
+
+block body
+  article#project
+    a(href='#').close
+      img(src='/assets/img/icn.close.png', alt='close')
+    .container
+      .fade-scale
+        header
+          h1 Project Title Goes Here
+          h3 Client Name
+          p.hero This is the short description about the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus ante sit amet mi facilisis gravida. Ut porttitor viverra diam in lacinia. Pellentesque vehicula mollis auctor.
+        img(src='http://placehold.it/1200x700')
+        img(src='http://placehold.it/1200x700')
+        img(src='http://placehold.it/1200x700')
+    .project-links
+      a(href='/project/sample-project-2.html').prev-project
+        strong Previous Project:
+        span  Project Title Goes here
+      a(href='/project/sample-project-2.html').next-project
+        strong Next Project:
+        span  Project Title Goes here with a really long title
+  article#post
+  section#welcome.section
+    .slider
+      .slide
+        .tagline
+          .container
+            .col-md-8.col-md-offset-2
+              h2 Lorem ipsum dolor sit amet
+              a(href='#').btn
+                .corner.nw
+                .corner.ne
+                .corner.sw
+                .corner.se
+                .line.line-t
+                .line.line-r
+                .line.line-b
+                .line.line-l
+                span Learn More
+        img(src='/assets/img/gallery-1.jpg')#portrait-image
+      .slide
+        .tagline
+          .container
+            .col-md-8.col-md-offset-2
+              h2 Donec viverra id nunc vel vestibulum
+              a(href='#').btn
+                .corner.nw
+                .corner.ne
+                .corner.sw
+                .corner.se
+                .line.line-t
+                .line.line-r
+                .line.line-b
+                .line.line-l
+                span Learn More
+        img(src='/assets/img/gallery-1.jpg')
+      .slide
+        .tagline
+          .container
+            .col-md-8.col-md-offset-2
+              h2 Suspendisse lobortis purus id massa interdum
+              a(href='#').btn
+                .corner.nw
+                .corner.ne
+                .corner.sw
+                .corner.se
+                .line.line-t
+                .line.line-r
+                .line.line-b
+                .line.line-l
+                span Learn More
+        img(src='/assets/img/gallery-1.jpg')
+  #wrapper
+    include ../partials/_about
+    include ../partials/_work
+    include ../partials/_news
+    include ../partials/_contact
