@@ -1,0 +1,124 @@
+a:hover, a:active {
+  color: #00a7b8;
+}
+
+/*-----Navbar-----*/
+
+#wpadminbar .ab-top-menu>li>.ab-item:focus, #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus, #wpadminbar .ab-top-menu>li:hover>.ab-item, #wpadminbar .ab-top-menu>li.hover>.ab-item {
+  background: #00a7b8;
+  color: #fff;
+}
+
+#wpadminbar .quicklinks .menupop ul li a:hover, #wpadminbar .quicklinks .menupop ul li a:focus, #wpadminbar .quicklinks .menupop ul li a:hover strong, #wpadminbar .quicklinks .menupop ul li a:focus strong, #wpadminbar .quicklinks .menupop.hover ul li a:hover, #wpadminbar .quicklinks .menupop.hover ul li a:focus, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus, #wpadminbar li:hover .ab-icon:before, #wpadminbar li:hover .ab-item:before, #wpadminbar li a:focus .ab-icon:before, #wpadminbar li .ab-item:focus:before, #wpadminbar li.hover .ab-icon:before, #wpadminbar li.hover .ab-item:before, #wpadminbar li:hover #adminbarsearch:before {
+  color: #fff;
+}
+
+#wpadminbar>#wp-toolbar li:hover span.ab-label, #wpadminbar>#wp-toolbar li.hover span.ab-label, #wpadminbar>#wp-toolbar a:focus span.ab-label {
+  color: #fff;
+}
+
+
+/*-----Sidebar Navigation-----*/
+
+#adminmenu li.menu-top {
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+#adminmenu li.current a.menu-top,
+.folded #adminmenu li.wp-has-current-submenu,
+.folded #adminmenu li.current.menu-top,
+#adminmenu .wp-menu-arrow,
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+#adminmenu .wp-menu-arrow div {
+  background: #00a7b8;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+a, #the-comment-list p.comment-author strong a, #media-upload a.del-link, #media-items a.delete, #media-items a.delete-permanently, .plugins a.delete, .ui-tabs-nav a, .plugins .inactive a {
+  color: #00a7b8;
+}
+
+#adminmenu li.menu-top:hover, #adminmenu li.opensub>a.menu-top, #adminmenu li>a.menu-top:focus {
+  background: #00a7b8;
+  color: #fff;
+}
+
+#adminmenu li:hover div.wp-menu-image:before {
+  color: #fff;
+}
+
+#adminmenu a:hover, #adminmenu li.menu-top>a:focus, #adminmenu .wp-submenu a:hover, #rightnow a:hover, #media-upload a.del-link:hover, div.dashboard-widget-submit input:hover, .subsubsub a:hover, .subsubsub a.current:hover, .ui-tabs-nav a:hover {
+  color: #fff;
+}
+
+#adminmenu .wp-submenu a:hover, #adminmenu .wp-submenu a:focus, #adminmenu .wp-has-current-submenu .wp-submenu a:hover, #adminmenu .wp-has-current-submenu .wp-submenu a:focus, #adminmenu a.wp-has-current-submenu:focus+.wp-submenu a:hover, #adminmenu .wp-has-current-submenu .wp-submenu.sub-open a:hover, #adminmenu .wp-has-current-submenu .wp-submenu.sub-open a:focus, #adminmenu .wp-has-current-submenu.opensub .wp-submenu a:hover, #adminmenu .wp-has-current-submenu.opensub .wp-submenu a:focus, .no-js li.wp-has-current-submenu:hover .wp-submenu a:hover, .no-js li.wp-has-current-submenu:hover .wp-submenu a:focus, .folded #adminmenu a.wp-has-current-submenu:focus+.wp-submenu a:hover, .folded #adminmenu a.wp-has-current-submenu:focus+.wp-submenu a:focus, .folded #adminmenu .wp-has-current-submenu .wp-submenu a:hover, .folded #adminmenu .wp-has-current-submenu .wp-submenu a:focus {
+  color: #fff;
+}
+
+#collapse-menu:hover,
+#collapse-menu:hover #collapse-button div:after {
+  color: #fff;
+}
+
+
+/*-----Buttons-----*/
+
+.wp-core-ui .button-primary {
+  background: #00a7b8;
+  border-color: #00a7b8;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.wp-core-ui .button-primary.hover,
+.wp-core-ui .button-primary:hover,
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary:focus,
+.wp-core-ui .button-primary.active,
+.wp-core-ui .button-primary.active:hover,
+.wp-core-ui .button-primary.active:focus,
+.wp-core-ui .button-primary:active {
+  background: #3f433f;
+  border-color: #3f433f;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.wp-core-ui .button-primary:active {
+  padding-top: 0;
+}
+
+.wrap .add-new-h2:hover {
+  background: #00a7b8;
+}
+
+
+/*-----Inputs-----*/
+
+input[type=checkbox]:checked:before {
+  color: #00a7b8;
+}
+
+
+/*-----Contextual Help-----*/
+
+#contextual-help-back,
+.contextual-help-tabs .active,
+.contextual-help-tabs .active a,
+.contextual-help-tabs .active a:hover {
+  background: #f2f2f2;
+}
+
+.contextual-help-tabs .active {
+  border-color: #00a7b8;
+}
+
+
+/*-----Misc. Icons-----*/
+
+.view-switch a.current:before {
+  color: #00a7b8;
+}
